@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>Registration Form</title>
+	<script type="text/javascript" src="validation.js">
+
+	</script>
+</head>
+<body background="photo.jpg">
+<br><br><br><br><br>
+<form method="POST" action="regcheck.php">
+<table align="center" bgcolor="yellow" height="250" width="250">
+			<tr>
+					<th colspan="2px" align="center"><h1> Register Yourself</h1> </th>
+				</tr>
+			<tr>
+					<td>Id: </td>
+					<td><input type="text" name="id"  id="id" onkeyup="idCheck()"placeholder="Enter id"></td>
+					<td width="500px"><div id="idDiv"></div></td>
+				</tr>
+			<tr>
+					<td>Userame: </td>
+					<td><input type="text" name="name" id="name" onkeyup="namecheck()" placeholder="Enter name"></td>
+					<td width="500px"><div id="namediv"></div></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="pass" id="pass" onkeyup="passcheck()"placeholder="Enter Password"></td>
+				
+						</tr>
+					     <tr>
+				    <td>Confirm Password:</td>
+                   <td><input type="password" name="cpass" id="id" onkeyup="passCheck()" placeholder="Enter confirm Password"></td>
+                </tr>	
+				<tr>
+					<td>DOB:</td>
+					<td><input type="date" name="dob" ></td>
+				</tr>
+				<tr>
+					<td>Contact no:</td>
+					<td><input type="text" name="cno" id="cno" onkeyup="cnoCheck()" placeholder="Enter contact no" ></td>
+					<td width="500px"><div id="cnoDiv"></div></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name="email"  id="email" onkeyup="emailCheck()"  placeholder="Enter email address"></td>
+					<td width="500px"><div id="emailDiv"></div></td>
+				</tr>
+				<tr>
+					<td><b><center>Address:</b></td>
+					
+				</tr>
+				<tr>
+					<td>House:</td>
+					<td><input type="text" name="house"  id="house" onkeyup="emailCheck()"  placeholder="Enter your house no."></td>
+					<td width="500px"><div id="emailDiv"></div></td>
+				</tr>
+				<tr>
+					<td>Road no:</td>
+					<td><input type="text" name="road"  id="road" onkeyup="emailCheck()"  placeholder="Enter your road no."></td>
+					<td width="500px"><div id="emailDiv"></div></td>
+				</tr>
+				<tr>
+					<td>City:</td>
+					<td><input type="text" name="city"  id="city" onkeyup="emailCheck()"  placeholder="Enter your city"></td>
+					<td width="500px"><div id="emailDiv"></div></td>
+				</tr>
+				<td>Division</td>
+                <td> <select name="division" id="division">
+						<option value=""></option>
+						<option value="Dhaka">Dhaka</option>
+						<option value="Rangpur">Rangpur</option>
+						<option value="Sylhet">Sylhet</option>
+						<option value="Chittagong">Chittagong</option>
+						<option value="Khulna">Khulna</option>
+						<option value="Rajshahi">Rajshahi</option>
+						 </td>
+</tr>
+				<tr>
+					<td>Gender:</td>
+					<td>
+						<input type="radio" name="gender" id="gender" value="Male"> male &emsp;
+						<input type="radio" name="gender" id="gender" value="Female"> female &emsp;
+						<input type="radio" name="gender" id="gender" value="Other"> other
+					</td>
+				</tr>
+				
+				<tr>
+					<td>User Type:</td>
+					<td>
+						<input type="radio" name="type" value="Admin"> Admin &emsp;
+						<input type="radio" name="type" value="Farmer"> Farmer  &emsp;
+						<input type="radio" name="type" value="customer"> customer
+					</td>
+				</tr>		
+					  
+					</td>
+				</tr>
+				<tr align="center">
+			<td colspan="2"><input type="submit" name="reg">
+			</tr>
+			<tr align="center">
+				
+			    <td colspan="2"><a href="loginfornt.php">Back</a></td>
+			</tr>
+			</table>
+	
+				
+				</form>
+				</body>
+				</html>
+				
+				
